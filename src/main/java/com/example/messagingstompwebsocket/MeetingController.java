@@ -9,17 +9,13 @@ import org.springframework.web.util.HtmlUtils;
 @Controller
 public class MeetingController {
 
-  @MessageMapping("/jello")
+  @MessageMapping("/TTT")
   @SendTo("/topic/meetings")
-  public Meeting greeting(HelloMessage message) throws Exception {
-    System.out.println("?????????");
-    Thread.sleep(10); // simulated delay
-    return new Meeting("Jellowwwww, " + HtmlUtils.htmlEscape(message.getName()) + "!");
-    if(Integer.parseInt(HtmlUtils.htmlEscape(message.getName()))) {
-      if (Integer.parseInt(HtmlUtils.htmlEscape(message.getName())) >= 0
-          && Integer.parseInt(HtmlUtils.htmlEscape(message.getName())) <= 9) {
-
-      }
-    }
+  public TTT greeting(HelloMessage message) throws Exception {
+  
+    Thread.sleep(10); // simulated delay  
+    return new TTT(HtmlUtils.htmlEscape(message.getName()));
   }
+
+  
 }

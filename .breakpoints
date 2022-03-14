@@ -1,3 +1,12 @@
 {
-  "files": {}
+  "files": {
+    "src/main/resources/static/app.js": [
+      {
+        "id": "e7b540a5-eb20-47ee-901c-1457d40a5bce",
+        "line": 8,
+        "version": 226,
+        "index": 214
+      }
+    ]
+  }
 }

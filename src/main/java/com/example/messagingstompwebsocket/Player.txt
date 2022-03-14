@@ -1,0 +1,29 @@
+
+import java.util.*;
+
+public class Player {
+
+  private String name;
+  private Symbol symbol;
+  private int num;
+  private String[] players = new String[2];
+  // ********************************
+  // * Constructors
+  // * ******************************
+
+  public Player(int num) {
+    this.num = num;
+    Scanner scn = new Scanner(System.in);
+    this.name = userGetName(scn);
+    this.symbol = new Symbol();
+  }
+
+  public Player(String name, Symbol symbol) {
+    this.name = name;
+    this.symbol = symbol;
+  }
+
+  public String userGetName(Scanner scn) {
+    System.out.print("Player " + num + " enter your name: ");
+    return scn.next();
+  }
